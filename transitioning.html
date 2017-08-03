@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html>
 <title>Transitioning</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">HOME</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FRESHMEN <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="transitioning.html">Transitioning</a></li>
+          <li><a href="meeting.html">Meeting New People</a></li>
+          <li><a href="clubs.html">Joining Clubs</a></li>
+          <li><a href="know.html">18 Things to Know Before You Go to High School</a></li>
+        </ul>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SOPHOMORE <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Finding Yourself</a></li>
+          <li><a href="#">Picking the Right Classes</a></li>
+          <li><a href="#">About "Slack Year"</a></li>
+          <li><a href="#">Cliques</a></li>
+        </ul>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">JUNIOR <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ACT/SAT</a></li>
+            <li><a href="#">Study Habits</a></li>
+            <li><a href="#">Internships/Summer Programs</a></li>
+          </ul>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SENIOR <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Common App</a></li>
+              <li><a href="#">College Essays</a></li>
+              <li><a href="#">Picking the Right College</a></li>
+            </ul>
+
+  </div>
+</nav>
+
 <style>
 h1 {
     text-align: center;
@@ -19,70 +52,20 @@ h1 {
     color: white;
 }
 p {
-    text-indent: 100px;
+  text-indent: 100px;
+  font-family:arial;
     text-align: justify;
     color: #99A3A4
 }
-
 h3 {
   text-align:left;
   color:white;
   letter-spacing: 4px;
 }
-
-
 </style>
-</head>
 
-<body style="background-color:black;">
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card-2">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="sg.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-  </div>
-</div>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="FRESHMEN">FRESHMEN <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="transitioning.html" class="w3-bar-item w3-button">Transitioning</a>
-        <a href="meeting.html" class="w3-bar-item w3-button">Meeting New People</a>
-        <a href="clubs.html" class="w3-bar-item w3-button">Joining Clubs</a>
-      <a href="know.html" class="w3-bar-item w3-button">18 Things to Know Before You Go to High School</a>
-      </div>
-    </div>
+ <body style="background-color:black;">
 
-     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="SOPHOMORE">SOPHOMORE <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Finding Yourself</a>
-        <a href="#" class="w3-bar-item w3-button">Picking the Right Classes</a>
-        <a href="#" class="w3-bar-item w3-button">About "Slack Year"</a>
-        <a href="#" class="w3-bar-item w3-button">Cliques</a>
-        </div>
-       </div>
-
-   <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="JUNIOR">JUNIOR <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">ACT/SAT</a>
-        <a href="#" class="w3-bar-item w3-button">Study Habits</a>
-        <a href="#" class="w3-bar-item w3-button">Internships/Summer Programs</a>
-        </div>
-      </div>
-
- <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="SENIOR">SENIOR <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Common App</a>
-        <a href="#" class="w3-bar-item w3-button">College Essays</a>
-        <a href="#" class="w3-bar-item w3-button">Choosing a College</a>
-        </div>
-        </div>
-
-        <br>
-        <br>
-        <br>
 
   <h1 style="font-family:arial; text-align:center; text-color:white;">Transitioning from Middle School to High School</h1>
   <br>
